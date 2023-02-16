@@ -14,7 +14,7 @@ export function Header() {
   return (
     <header className="w-full  h-screen relative">
       <div className="fixed top-0 w-full">
-        <div className="flex justify-between items-center max-w-6xl mx-auto px-8 py-4">
+        <div className="flex justify-between items-center max-w-6xl mx-auto px-8 py-4 bg-background">
           <a href="#" className="">
             <img className="w-" src={logo} alt="Logo EmpreART" />
           </a>
@@ -50,11 +50,29 @@ export function Header() {
         </div>
       </div>
 
-      <section className="h-screen flex flex-col-reverse justify-center items-center">
-        <div className="py-12">
-          <h1 className="text-white font-extrabold uppercase text-2xl">Você tem a <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow'>Ideia</span><br></br> Nós temos a <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow'>Solução</span></h1>
+      <section className="px-8 h-screen flex flex-col justify-center">
+        <img className="w-64 mx-auto" src={lampada} alt="Lampada Header" />
+
+        <div className=''>
+          <h1 className="text-white font-extrabold uppercase text-2xl py-6">
+            Você tem a{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow">
+              Ideia
+            </span>
+            <br></br> Nós temos a{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow">
+              Solução
+            </span>
+          </h1>
+
+          <a
+            className="text-center bg-gradient-to-r from-orange to-yellow text-white px-6 py-3 rounded-md"
+            href="#"
+          >
+            Nossos Serviços
+          </a>
+          <a className='border-2 text-white px-6 py-3 rounded-md ml-2' href="#">Quem somos</a>
         </div>
-        <img className="w-64" src={lampada} alt="Lampada Header" />
       </section>
     </header>
   )
