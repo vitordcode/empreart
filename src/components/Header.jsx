@@ -52,9 +52,9 @@ export function Header() {
 
       <section className="h-screen flex flex-col-reverse justify-center items-center">
         <div className="py-12">
-          <h1 className="text-white font-extrabold uppercase text-3xl">Você tem a <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow'>Ideia</span><br></br> Nós temos a <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow'>Solução</span></h1>
+          <h1 className="text-white font-extrabold uppercase text-2xl">Você tem a <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow'>Ideia</span><br></br> Nós temos a <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow'>Solução</span></h1>
         </div>
-        <img className="w-72" src={lampada} alt="Lampada Header" />
+        <img className="w-64" src={lampada} alt="Lampada Header" />
       </section>
     </header>
   )
