@@ -9,8 +9,8 @@ module.exports = {
         background: '#0D0D0D',
       },
       fontFamily: {
-        poppins: 'Poppins', 'sans-serif'
-      },
+        poppins: 'Poppins'
+      }
     },
   },
   plugins: [],
