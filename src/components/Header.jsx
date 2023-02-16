@@ -50,11 +50,11 @@ export function Header() {
         </div>
       </div>
 
-      <section className="px-8 h-screen flex flex-col justify-center">
-        <img className="w-64 mx-auto" src={lampada} alt="Lampada Header" />
+      <section className="px-8 h-screen flex flex-col justify-center md:flex-row-reverse md:items-center md:mx-auto max-w-6xl">
+        <img className="w-64 md:w-80 lg:w-96 mx-auto md:mr-0" src={lampada} alt="Lampada Header" />
 
         <div className=''>
-          <h1 className="text-white font-extrabold uppercase text-2xl py-6">
+          <h1 className="text-white font-extrabold uppercase text-2xl md:text-4xl lg:text-5xl py-6">
             Você tem a{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow">
               Ideia
