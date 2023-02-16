@@ -31,7 +31,7 @@ export function Header() {
               role="menubar"
               className={` ${
                 menuMobile ? 'flex' : 'hidden'
-              } flex-col gap-4 absolute right-0 left-0 top-16 shadow-xl text-center text-lg lg:flex lg:flex-row lg:items-center lg:justify-end text-white lg:relative lg:top-0 lg:shadow-none`}
+              } bg-background flex-col gap-4 absolute right-0 left-0 top-16 shadow-xl text-center text-lg lg:flex lg:flex-row lg:items-center lg:justify-end text-white lg:relative lg:top-0 lg:shadow-none`}
             >
               <li role="menuitem" className="py-1 px-6">
                 <a href="#">Inicio</a>
