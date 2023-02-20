@@ -79,21 +79,21 @@ let digitais = [
 
 export function Services() {
   return (
-    <section className="max-w-6xl mx-auto">
+    <section className="max-w-6xl mx-auto py-16">
       <div>
-        <h2 className="text-center text-4xl font-extrabold max-w-lg mx-auto uppercase text-white">
+        <h2 className="text-center text-3xl font-extrabold max-w-md mx-auto uppercase text-white">
           Divulgue para seu negócio ter sucesso
         </h2>
       </div>
 
-      <div>
-        <div>
-          <h3>Digitais</h3>
+      <div className='pt-28 flex flex-col items-center'>
+        <div className='pb-16'>
+          <h3 className='font-bold uppercase text-white text-2xl'>Digitais</h3>
         </div>
         <div className="grid grid-cols-2 px-6">
           { digitais.map((item) => (
-            <div className="bg-slate-900 m-4 flex flex-col justify-center items-center" key={item.name}>
-              <img src={item.url} alt={item.name} />
+            <div className="p-4 bg-gradient-to-tr from-grayCard to-blueCard m-4 flex flex-col justify-center items-center rounded-md" key={item.name}>
+              <img className='w-12 py-4' src={item.url} alt={item.name} />
               <p className="text-white text-center">{item.name}</p>
             </div>
           ))}
