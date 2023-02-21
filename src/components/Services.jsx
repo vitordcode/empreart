@@ -15,6 +15,7 @@ import recibos from '../assets/img/services/impressos/recibos.svg'
 import tags from '../assets/img/services/impressos/tags.svg'
 import taloes from '../assets/img/services/impressos/taloes.svg'
 
+import bgText from '../assets/img/bg-text.png'
 import circle from '../assets/img/circle.svg'
 import circlesYellow from '../assets/img/circles-yellow.svg'
 
@@ -176,8 +177,9 @@ const instalacoes = [
 export function Services() {
   return (
     <section className="max-w-6xl mx-auto py-16">
-      <div>
-        <h2 className="text-center text-2xl font-extrabold w-[80%] leading-8 mx-auto uppercase text-white">
+      <div className='relative flex justify-center'>
+        <img src={bgText} className='w-64 z-0 absolute top-[-3rem] opacity-70' alt="Circle background" />
+        <h2 className="text-center text-2xl z-10 font-extrabold w-[80%] leading-8 mx-auto uppercase text-white">
           Divulgue para seu negócio ter sucesso
         </h2>
       </div>
