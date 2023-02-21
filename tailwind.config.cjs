@@ -10,7 +10,7 @@ module.exports = {
         orange: '#FF7C1F',
         yellow: '#F6C90E',
         grayCard: '#1A1A1A',
-        blueCard: '#2A3339'
+        blueCard: '#0F0F0F'
       },
       fontFamily: {
         poppins: 'Poppins'
