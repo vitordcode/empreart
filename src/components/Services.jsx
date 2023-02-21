@@ -15,6 +15,9 @@ import recibos from '../assets/img/services/impressos/recibos.svg'
 import tags from '../assets/img/services/impressos/tags.svg'
 import taloes from '../assets/img/services/impressos/taloes.svg'
 
+import circle from '../assets/img/circle.svg'
+import circlesYellow from '../assets/img/circles-yellow.svg'
+
 let impressos = [
   {
     name: 'Adesivos',
@@ -170,19 +173,20 @@ const instalacoes = [
   },
 ]
 
-
 export function Services() {
   return (
     <section className="max-w-6xl mx-auto py-16">
       <div>
-        <h2 className="text-center text-2xl font-extrabold w-[60%] leading-8 mx-auto uppercase text-white">
+        <h2 className="text-center text-2xl font-extrabold w-[80%] leading-8 mx-auto uppercase text-white">
           Divulgue para seu negócio ter sucesso
         </h2>
       </div>
 
       <div className='pt-28 flex flex-col items-center'>
-        <div className='pb-16'>
-          <h3 className='font-bold uppercase text-white text-2xl'>Impressos</h3>
+        <div className='pb-16 relative'>
+        <img src={circle} className='w-14 z-0 absolute top-[-1.2rem] left-[-1.6rem] opacity-70' alt="Circle background" />
+          <h3 className='font-bold uppercase text-white text-2xl z-10'>Impressos</h3>
+          <img src={circlesYellow} className='w-6 z-0 absolute top-0 right-[-.8rem] opacity-70' alt="Circle background" />
         </div>
         <div className="grid grid-cols-2 w-full px-6">
           { impressos.map((item) => (
@@ -195,8 +199,10 @@ export function Services() {
       </div>
 
       <div className='pt-28 flex flex-col items-center'>
-        <div className='pb-16'>
-          <h3 className='font-bold uppercase text-white text-2xl'>Digitais</h3>
+        <div className='pb-16 relative'>
+          <img src={circle} className='w-14 z-0 absolute top-[-1.2rem] left-[-1.6rem] opacity-70' alt="Circle background" />
+          <h3 className='font-bold uppercase text-white text-2xl z-10'>Digitais</h3>
+          <img src={circlesYellow} className='w-6 z-0 absolute top-0 right-[-.8rem] opacity-70' alt="Circle background" />
         </div>
         <div className="grid grid-cols-2 px-6">
           { digitais.map((item) => (
@@ -209,8 +215,10 @@ export function Services() {
       </div>
 
       <div className='pt-28 flex flex-col items-center'>
-        <div className='pb-16'>
-          <h3 className='font-bold uppercase text-white text-2xl'>Brindes</h3>
+        <div className='pb-16 relative'>
+        <img src={circle} className='w-14 z-0 absolute top-[-1.2rem] left-[-1.6rem] opacity-70' alt="Circle background" />
+          <h3 className='font-bold uppercase text-white text-2xl z-10'>Brindes</h3>
+          <img src={circlesYellow} className='w-6 z-0 absolute top-0 right-[-.8rem] opacity-70' alt="Circle background" />
         </div>
         <div className="grid grid-cols-2 w-full px-6">
           { brindes.map((item) => (
@@ -223,8 +231,10 @@ export function Services() {
       </div>
 
       <div className='pt-28 flex flex-col items-center'>
-        <div className='pb-16'>
-          <h3 className='font-bold uppercase text-white text-2xl'>Instalações</h3>
+        <div className='pb-16 relative'>
+        <img src={circle} className='w-14 z-0 absolute top-[-1.2rem] left-[-1.6rem] opacity-70' alt="Circle background" />
+          <h3 className='font-bold uppercase text-white text-2xl z-10'>Instalações</h3>
+          <img src={circlesYellow} className='w-6 z-0 absolute top-0 right-[-.8rem] opacity-70' alt="Circle background" />
         </div>
         <div className="grid grid-cols-2 px-6 w-full">
           { instalacoes.map((item) => (
