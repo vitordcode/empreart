@@ -54,7 +54,7 @@ export function Header() {
         <img className="w-64 md:w-80 lg:w-96 mx-auto md:mr-0" src={lampada} alt="Lampada Header" />
 
         <div className=''>
-          <h1 className="text-white font-extrabold uppercase text-2xl md:text-4xl lg:text-5xl py-6 ">
+          <h1 className="text-white font-extrabold uppercase text-4xl md:text-4xl lg:text-5xl py-6 ">
             Você tem a{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange to-yellow">
               Ideia

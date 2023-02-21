@@ -179,7 +179,7 @@ export function Services() {
     <section className="max-w-6xl mx-auto py-16">
       <div className='relative flex justify-center'>
         <img src={bgText} className='w-64 z-0 absolute top-[-3rem] opacity-70' alt="Circle background" />
-        <h2 className="text-center text-2xl z-10 font-extrabold w-[80%] leading-8 mx-auto uppercase text-white">
+        <h2 className="text-center text-4xl z-10 font-extrabold w-[80%] leading-8 mx-auto uppercase text-white">
           Divulgue para seu negócio ter sucesso
         </h2>
       </div>
@@ -190,7 +190,7 @@ export function Services() {
           <h3 className='font-bold uppercase text-white text-2xl z-10'>Impressos</h3>
           <img src={circlesYellow} className='w-6 z-0 absolute top-0 right-[-.8rem] opacity-70' alt="Circle background" />
         </div>
-        <div className="grid grid-cols-2 w-full px-6">
+        <div className="grid grid-cols-2 w-full px-10">
           { impressos.map((item) => (
             <div className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-4 flex flex-col justify-center items-center rounded-md" key={item.name}>
               <img className='w-12 py-4 flex flex-1' src={item.url} alt={item.name} />
@@ -206,7 +206,7 @@ export function Services() {
           <h3 className='font-bold uppercase text-white text-2xl z-10'>Digitais</h3>
           <img src={circlesYellow} className='w-6 z-0 absolute top-0 right-[-.8rem] opacity-70' alt="Circle background" />
         </div>
-        <div className="grid grid-cols-2 px-6">
+        <div className="grid grid-cols-2 px-10">
           { digitais.map((item) => (
             <div className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-4 flex flex-col justify-center items-center rounded-md" key={item.name}>
               <img className='w-12 py-4 flex flex-1' src={item.url} alt={item.name} />
@@ -222,7 +222,7 @@ export function Services() {
           <h3 className='font-bold uppercase text-white text-2xl z-10'>Brindes</h3>
           <img src={circlesYellow} className='w-6 z-0 absolute top-0 right-[-.8rem] opacity-70' alt="Circle background" />
         </div>
-        <div className="grid grid-cols-2 w-full px-6">
+        <div className="grid grid-cols-2 w-full px-10">
           { brindes.map((item) => (
             <div className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-4 flex flex-col justify-center items-center rounded-md" key={item.name}>
               <img className='w-12 py-4 flex flex-1' src={item.url} alt={item.name} />
@@ -238,7 +238,7 @@ export function Services() {
           <h3 className='font-bold uppercase text-white text-2xl z-10'>Instalações</h3>
           <img src={circlesYellow} className='w-6 z-0 absolute top-0 right-[-.8rem] opacity-70' alt="Circle background" />
         </div>
-        <div className="grid grid-cols-2 px-6 w-full">
+        <div className="grid grid-cols-2 px-10 w-full">
           { instalacoes.map((item) => (
             <div className="py-4 bg-gradient-to-tr from-grayCard to-blueCard m-4 flex flex-col justify-center items-center rounded-md" key={item.name}>
               <img className='w-12 py-4 flex flex-1' src={item.url} alt={item.name} />
