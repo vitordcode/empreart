@@ -175,11 +175,6 @@ const instalacoes = [
 
 export function Services() {
   return (
-<<<<<<< HEAD
-    <section className="max-w-6xl mx-auto py-16" id='services'>
-      <div className='relative flex justify-center'>
-        <img src={bgText} className='w-64 z-0 absolute top-[-3rem] opacity-70' alt="Circle background" />
-=======
     <section className="max-w-6xl mx-auto py-16">
       <div className="relative flex justify-center">
         <img
@@ -187,7 +182,6 @@ export function Services() {
           className="w-64 z-0 absolute top-[-3rem] opacity-70"
           alt="Circle background"
         />
->>>>>>> fd82ac11b53a10859773b488b2ac478042225f7d
         <h2 className="text-center text-4xl z-10 font-extrabold w-[80%] leading-8 mx-auto uppercase text-white">
           Divulgue para seu negócio ter sucesso
         </h2>
