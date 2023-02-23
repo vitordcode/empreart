@@ -67,7 +67,7 @@ export function Header() {
 
           <a
             className="text-center bg-gradient-to-r from-orange to-yellow text-white px-6 py-3 rounded-md"
-            href="#"
+            href="#servicos"
           >
             Nossos Serviços
           </a>

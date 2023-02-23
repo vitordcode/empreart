@@ -176,7 +176,7 @@ const instalacoes = [
 
 export function Services() {
   return (
-    <section className="max-w-6xl mx-auto py-16">
+    <section className="max-w-6xl mx-auto py-16" id='services'>
       <div className='relative flex justify-center'>
         <img src={bgText} className='w-64 z-0 absolute top-[-3rem] opacity-70' alt="Circle background" />
         <h2 className="text-center text-4xl z-10 font-extrabold w-[80%] leading-8 mx-auto uppercase text-white">
