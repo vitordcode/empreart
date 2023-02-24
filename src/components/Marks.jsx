@@ -40,21 +40,32 @@ const marks = [
   vetsPet
 ]
 
+import { motion } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
 
 
 export default function Marks() {
+
+  const [ width, setWidth ] = useState(0)
+  const carousel = useRef()
+
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
+  }, [])
+  
+
   return (
     <section className="w-full py-40">
       <div className="max-w-6xl mx-auto overflow-hidden">
         <h2 className="text-white font-extrabold uppercase text-center text-2xl pb-20">Marcas que confiam em nosso trabalho</h2>
 
-        <div className="flex items-center px-10 gap-4">
+        <motion.div ref={carousel} drag="x" dragConstraints={{ right: 0, left: -width }} whileTap={{cursor: "grabbing"}} className="flex items-center px-10 gap-4 cursor-">
           { marks.map(mark => {
             return (
-              <img className="w-36" src={mark} key={mark} alt="Logo de nossos Parceiros" />
+              <img className="w-36 pointer-events-none" src={mark} key={mark} alt="Logo de nossos Parceiros" />
             )
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   )
