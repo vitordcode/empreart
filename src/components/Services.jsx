@@ -226,8 +226,8 @@ export function Services() {
       </div>
 
       {/* Digitais */}
-      <div className="pt-28 flex flex-col items-center md:grid md:grid-cols-3">
-        <div className="pb-16 md:col-span-1 md:col-start-3 justify-center flex items-center">
+      <div className="pt-28 flex flex-col items-center md:grid md:grid-flow-col md:grid-rows-1 md:grid-cols-3">
+        <div className="pb-16 md:pb-0 md:col-span-1 justify-center flex items-center">
           <div className="relative inline-block">
             <img
               src={circle}
@@ -244,7 +244,7 @@ export function Services() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 px-10 md:col-span-2 md:grid-cols-4 col-start-1 col-end-2">
+        <div className="grid grid-cols-2 px-10 md:col-span-2 md:col-start-1 md:grid-cols-4">
           {digitais.map((item) => (
             <div
               className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-4 flex flex-col justify-center items-center rounded-md"
@@ -265,7 +265,7 @@ export function Services() {
 
       {/* Brindes */}
       <div className="pt-28 flex flex-col items-center md:grid md:grid-cols-3">
-        <div className="pb-16 md:col-span-1 justify-center flex items-center">
+        <div className="pb-16 md:pb-0 md:col-span-1 justify-center flex items-center">
           <div className="relative inline-block">
             <img
               src={circle}
@@ -301,9 +301,9 @@ export function Services() {
         </div>
       </div>
 
-      {/* Digitais */}
-      <div className="pt-28 flex flex-col items-center md:grid md:grid-cols-3">
-        <div className="pb-16 md:col-span-1 md:col-start-3 justify-center flex items-center">
+      {/* Instalações */}
+      <div className="pt-28 flex flex-col items-center md:grid md:grid-flow-col md:grid-rows-1 md:grid-cols-3">
+        <div className="pb-16 md:pb-0 md:col-span-1 justify-center flex items-center">
           <div className="relative inline-block">
             <img
               src={circle}
@@ -320,7 +320,7 @@ export function Services() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 px-10 md:col-span-2 md:grid-cols-4 col-start-1 col-end-2">
+        <div className="grid grid-cols-2 px-10 md:col-span-2 md:col-start-1 md:grid-cols-4">
           {instalacoes.map((item) => (
             <div
               className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-4 flex flex-col justify-center items-center rounded-md"
