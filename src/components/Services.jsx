@@ -7,7 +7,6 @@ import { impressos } from "../utils/impressos";
 import { digitais } from "../utils/digitais";
 import { brindes } from "../utils/brindes";
 import { instalacoes } from "../utils/instalacoes";
-import Card from "./Card";
 
 
 
@@ -46,7 +45,19 @@ export function Services() {
         </div>
         <div className="grid grid-cols-2 w-full px-10 md:col-span-2 md:grid-cols-4">
           {impressos.map((item) => (
-            <Card  />
+            <div
+              className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-4 flex flex-col justify-center items-center rounded-md"
+              key={item.name}
+            >
+              <img
+                className="w-12 py-4 flex flex-1"
+                src={item.url}
+                alt={item.name}
+              />
+              <p className="text-white text-center font-regular w-[60%] leading-5">
+                {item.name}
+              </p>
+            </div>
           ))}
         </div>
       </div>
