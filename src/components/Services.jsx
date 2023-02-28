@@ -3,10 +3,10 @@ import bgText from "../assets/img/bg-text.png";
 import circle from "../assets/img/circle.svg";
 import circlesYellow from "../assets/img/circles-yellow.svg";
 
-import { impressos } from "../utils/impressos";
-import { digitais } from "../utils/digitais";
-import { brindes } from "../utils/brindes";
-import { instalacoes } from "../utils/instalacoes";
+import { impressos } from "../utils/Impressos";
+import { digitais } from "../utils/Digitais";
+import { brindes } from "../utils/Brindes";
+import { instalacoes } from "../utils/Instalacoes";
 
 
 
@@ -157,7 +157,7 @@ export function Services() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 px-10 md:col-span-2 md:col-start-1 md:grid-cols-4">
+        <div className="grid grid-cols-2 px-10 md:col-span-2 md:col-start-1 md:grid-cols-4 w-full">
           {instalacoes.map((item) => (
             <div
               className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-4 flex flex-col justify-center items-center rounded-md"

@@ -7,8 +7,9 @@ export default function QuemSomos() {
         <div>
           <img className="w-[80%] lg:w-[60%] mx-auto" src={quemSomos} alt="Imaguem quem somos" />
         </div>
-        <div className="pt-10 md:pt-0">
-          <p className="text-white">Atuamos no ramo de impressões gráficas, mídias sociais, brindes personalizados e instalações. Estamos sempre oferecendo uma solução inteligente e buscamos ser cada vez mais uma empresa completa. Estamos preparados para atender clientes de pequeno, médio e grande porte, trabalhando  com dedicação, profissionalismo e responsabilidade. Entendemos que o seu crescimento e sucesso é também o nosso.  como podemos ajudar sua empresa hoje? Estamos prontos para atendê-los.</p>
+        <div className="pt-10 md:pt-0 flex flex-col">
+          <p className="text-white">Atuamos no ramo de impressões gráficas, mídias sociais, brindes personalizados e instalações. Estamos sempre oferecendo uma solução inteligente e buscamos ser cada vez mais uma empresa completa. Estamos preparados para atender clientes de pequeno, médio e grande porte, trabalhando  com dedicação, profissionalismo e responsabilidade. Entendemos que o seu crescimento e sucesso é também o nosso. Estamos prontos para atendê-los.</p>
+          <i className="text-white text-end">"Bruno e Beatriz"</i>
         </div>
       </div>
       
