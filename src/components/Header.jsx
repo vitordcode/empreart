@@ -14,11 +14,11 @@ export function Header() {
   return (
     <header className="w-full  h-screen relative">
       <div className="fixed top-0 w-full">
-        <div className="flex justify-between items-center max-w-6xl mx-auto px-8 py-4 bg-background">
+        <div className="flex justify-between items-center max-w-6xl mx-auto px-8 py-4 bg-background z-40">
           <a href="#">
             <img className="hover:opacity-75" src={logo} alt="Logo EmpreART" />
           </a>
-          <nav className="flex justify-between items-center">
+          <nav className="flex justify-between items-center =">
             <button id="menu" className="lg:hidden" onClick={toggleMenu}>
               {menuMobile ? (
                 <X size={32} className="text-white" />
@@ -67,11 +67,11 @@ export function Header() {
 
           <a
             className="text-center bg-gradient-to-r from-orange to-yellow text-white px-6 py-3 rounded-md"
-            href="#servicos"
+            href="#"
           >
             Nossos Serviços
           </a>
-          <a className='border-2 text-white px-6 py-3 rounded-md ml-2' href="#">Quem somos</a>
+          <a className='border-2 text-white px-6 py-[0.65rem] rounded-md ml-2' href="#">Quem somos</a>
         </div>
       </section>
     </header>

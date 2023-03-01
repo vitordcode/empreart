@@ -1,8 +1,3 @@
-
-import bgText from "../assets/img/bg-text.png";
-import circle from "../assets/img/circle.svg";
-import circlesYellow from "../assets/img/circles-yellow.svg";
-
 import { impressos } from "../utils/Impressos";
 import { digitais } from "../utils/Digitais";
 import { brindes } from "../utils/Brindes";
@@ -13,13 +8,8 @@ import { instalacoes } from "../utils/Instalacoes";
 export function Services() {
   return (
     <section className="max-w-6xl mx-auto py-16">
-      <div className="relative flex justify-center">
-        <img
-          src={bgText}
-          className="w-64 z-0 absolute top-[-3rem] opacity-70"
-          alt="Circle background"
-        />
-        <h2 className="text-center text-4xl z-10 font-extrabold w-[80%] leading-8 mx-auto uppercase text-white">
+      <div className="flex justify-center">
+        <h2 className="text-center text-4xl font-extrabold w-[80%] leading-8 mx-auto uppercase text-white">
           Divulgue para seu negócio ter sucesso
         </h2>
       </div>
@@ -27,20 +17,10 @@ export function Services() {
       {/* Impressos */}
       <div className="pt-28 flex flex-col items-center md:grid md:grid-cols-3">
         <div className="pb-16 md:col-span-1 justify-center flex items-center">
-          <div className="relative inline-block">
-            <img
-              src={circle}
-              className="w-14 z-0 absolute top-[-1.2rem] left-[-1.6rem] opacity-70"
-              alt="Circle background"
-            />
-            <h3 className="font-bold uppercase text-white text-2xl z-10">
+          <div className="inline-block">
+            <h3 className="font-bold uppercase text-white text-2xl">
               Impressos
             </h3>
-            <img
-              src={circlesYellow}
-              className="w-6 z-0 absolute top-0 right-[-.8rem] opacity-70"
-              alt="Circle background"
-            />
           </div>
         </div>
         <div className="grid grid-cols-2 w-full px-10 md:col-span-2 md:grid-cols-4">
@@ -65,20 +45,10 @@ export function Services() {
       {/* Digitais */}
       <div className="pt-28 flex flex-col items-center md:grid md:grid-flow-col md:grid-rows-1 md:grid-cols-3">
         <div className="pb-16 md:pb-0 md:col-span-1 justify-center flex items-center">
-          <div className="relative inline-block">
-            <img
-              src={circle}
-              className="w-14 z-0 absolute top-[-1.2rem] left-[-1.6rem] opacity-70"
-              alt="Circle background"
-            />
+          <div className="inline-block">
             <h3 className="font-bold uppercase text-white text-center text-2xl z-10">
               Digitais
             </h3>
-            <img
-              src={circlesYellow}
-              className="w-6 z-0 absolute top-0 right-[-.8rem] opacity-70"
-              alt="Circle background"
-            />
           </div>
         </div>
         <div className="grid grid-cols-2 px-10 md:col-span-2 md:col-start-1 md:grid-cols-4">
@@ -103,20 +73,10 @@ export function Services() {
       {/* Brindes */}
       <div className="pt-28 flex flex-col items-center md:grid md:grid-cols-3">
         <div className="pb-16 md:pb-0 md:col-span-1 justify-center flex items-center">
-          <div className="relative inline-block">
-            <img
-              src={circle}
-              className="w-14 z-0 absolute top-[-1.2rem] left-[-1.6rem] opacity-70"
-              alt="Circle background"
-            />
+          <div className="inline-block">
             <h3 className="font-bold uppercase text-white text-2xl z-10">
               Brindes
             </h3>
-            <img
-              src={circlesYellow}
-              className="w-6 z-0 absolute top-0 right-[-.8rem] opacity-70"
-              alt="Circle background"
-            />
           </div>
         </div>
         <div className="grid grid-cols-2 w-full px-10 md:col-span-2 md:grid-cols-4">
@@ -141,20 +101,10 @@ export function Services() {
       {/* Instalações */}
       <div className="pt-28 flex flex-col items-center md:grid md:grid-flow-col md:grid-rows-1 md:grid-cols-3">
         <div className="pb-16 md:pb-0 md:col-span-1 justify-center flex items-center">
-          <div className="relative inline-block">
-            <img
-              src={circle}
-              className="w-14 z-0 absolute top-[-1.2rem] left-[-1.6rem] opacity-70"
-              alt="Circle background"
-            />
+          <div className="inline-block">
             <h3 className="font-bold uppercase text-white text-center text-2xl z-10">
               Instalações
             </h3>
-            <img
-              src={circlesYellow}
-              className="w-6 z-0 absolute top-0 right-[-.8rem] opacity-70"
-              alt="Circle background"
-            />
           </div>
         </div>
         <div className="grid grid-cols-2 px-10 md:col-span-2 md:col-start-1 md:grid-cols-4 w-full">
