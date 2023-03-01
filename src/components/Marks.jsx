@@ -8,9 +8,9 @@ export default function Marks() {
           Marcas que confiam em nosso trabalho
         </h2>
 
-        <div className="w-full overflow-hidden relative">
-          <div className="slide-calc track ">
-            <div className="flex items-center gap-4 overflow-hidden">
+        <div className="w-full overflow-hidden">
+          <div className="slide-calc ">
+            <div className="flex items-center gap-4">
               {marks.map(mark => {
                 return (
                   <img
@@ -32,7 +32,8 @@ export default function Marks() {
                   />
                 )
               })}
-            </div>
+            </div>npm run dev
+            
           </div>
         </div>
       </div>
