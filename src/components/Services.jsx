@@ -1,7 +1,7 @@
-import { impressos } from "../utils/Impressos";
-import { digitais } from "../utils/Digitais";
-import { brindes } from "../utils/Brindes";
-import { instalacoes } from "../utils/Instalacoes";
+import { impressos } from "../utils/Impressos.js";
+import { digitais } from "../utils/Digitais.js";
+import { brindes } from "../utils/Brindes.js";
+import { instalacoes } from "../utils/Instalacoes.js";
 
 
 
