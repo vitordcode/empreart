@@ -1,7 +1,4 @@
-import { impressos } from "../utils/Impressos.js";
-import { digitais } from "../utils/Digitais.js";
-import { brindes } from "../utils/Brindes.js";
-import { instalacoes } from "../utils/Instalacoes.js";
+import { impressos, digitais, brindes, instalacoes  } from "../utils/index"
 
 
 

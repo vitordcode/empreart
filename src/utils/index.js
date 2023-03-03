@@ -82,3 +82,94 @@ export const impressos = [
   },
 ];
 
+
+
+
+import cartaoIterativo from "../assets/img/services/digitais/cartaoInterativo.svg";
+import logotipo from "../assets/img/services/digitais/logotipo.svg";
+import sites from "../assets/img/services/digitais/sites.svg";
+import midiaSocial from "../assets/img/services/digitais/midiaSocial.svg";
+
+export const digitais = [
+  {
+    name: "Cartão interativo digital",
+    url: cartaoIterativo,
+  },
+  {
+    name: "Criação de Logotipos",
+    url: logotipo,
+  },
+  {
+    name: "Criação de Sites",
+    url: sites,
+  },
+  {
+    name: "Pacote de Mídias Sociais",
+    url: midiaSocial,
+  },
+];
+
+
+import abridores from "../assets/img/services/brindes/abridores.svg";
+import baralhos from "../assets/img/services/brindes/baralhos.svg";
+import canecas from "../assets/img/services/brindes/canecas.svg";
+import canetas from "../assets/img/services/brindes/canetas.svg";
+import cobrePlacas from "../assets/img/services/brindes/cobrePlacas.svg";
+import lixeira from "../assets/img/services/brindes/lixeira.svg";
+import mousePad from "../assets/img/services/brindes/mousePad.svg";
+import regua from "../assets/img/services/brindes/regua.svg";
+
+export const brindes = [
+  {
+    name: "Abridores",
+    url: abridores,
+  },
+  {
+    name: "Baralhos",
+    url: baralhos,
+  },
+  {
+    name: "Canecas",
+    url: canecas,
+  },
+  {
+    name: "Canetas",
+    url: canetas,
+  },
+  {
+    name: "Cobre Placas",
+    url: cobrePlacas,
+  },
+  {
+    name: "Lixeiras de Carro",
+    url: lixeira,
+  },
+  {
+    name: "Mouse Pads",
+    url: mousePad,
+  },
+  {
+    name: "Réguas",
+    url: regua,
+  },
+];
+
+
+import faixadas from "../assets/img/services/instalacao/faixadas.svg";
+import outdoor from "../assets/img/services/instalacao/outdoor.svg";
+import papelParede from "../assets/img/services/instalacao/papelParede.svg";
+
+export const instalacoes = [
+  {
+    name: "Fachadas",
+    url: faixadas,
+  },
+  {
+    name: "Outdoors",
+    url: outdoor,
+  },
+  {
+    name: "Papeis de Parede",
+    url: papelParede,
+  },
+];
