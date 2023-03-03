@@ -4,7 +4,7 @@ import papelParede from "../assets/img/services/instalacao/papelParede.svg";
 
 export const instalacoes = [
   {
-    name: "Faixadas",
+    name: "Fachadas",
     url: faixadas,
   },
   {

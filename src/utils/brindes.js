@@ -29,7 +29,7 @@ export const brindes = [
     url: cobrePlacas,
   },
   {
-    name: "lixeiras de Carro",
+    name: "Lixeiras de Carro",
     url: lixeira,
   },
   {
