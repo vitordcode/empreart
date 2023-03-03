@@ -1,4 +1,4 @@
-import { marks } from "../utils/Marks";
+import { marks } from "../utils/index";
 
 export default function Marks() {
   return (
