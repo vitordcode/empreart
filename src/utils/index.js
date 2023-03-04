@@ -177,7 +177,7 @@ export const instalacoes = [
 
 import venite from '../assets/img/marks/venite.png'
 import advocacia from '../assets/img/marks/advocacia.png'
-import useBrands from '../assets/img/marks/useBrands.png'
+import useBrands from "../assets/img/marks/useBrands.png"
 import batataria from '../assets/img/marks/batataria.png'
 import cuidarComAmor from '../assets/img/marks/cuidarComAmor.png'
 import natalino from '../assets/img/marks/natalino.png'
