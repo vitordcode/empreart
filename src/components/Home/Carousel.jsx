@@ -49,7 +49,7 @@ export default function Carousel() {
           key={item.id}
         >
           <img
-            className="w-[80%] mx-auto mb-3"
+            className="w-[70%] mx-auto mb-3"
             src={item.image}
             alt={item.nome}
           />

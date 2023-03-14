@@ -51,7 +51,7 @@ export default function Navbar() {
               <span className="sr-only">EmpreART</span>
               <img
                 className="h-8 w-auto"
-                src="../../../assets/logo.svg"
+                src={logo}
                 alt="Logo EmpreART"
               />
             </a>

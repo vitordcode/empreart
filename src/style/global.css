@@ -9,7 +9,9 @@ body {
   position: relative;
 }
 
-
+.image {
+  width: 9rem !important;
+}
 
 .slick-prev{
   left: 0 !important;

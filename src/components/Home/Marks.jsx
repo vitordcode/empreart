@@ -48,9 +48,9 @@ export default function Marks() {
         Marcas que confiam em nosso trabalho
       </h2>
       <div>
-        <Slider className='' { ...settings }>
+        <Slider { ...settings }>
           {marks.map(item => (
-            <img className='mx-10 px-1 lg:px-2' src={item} key={item} alt={item} />
+            <img className='mx-10 lg:px-2 image' src={item} key={item} alt={item} />
           ))}
         </Slider>
       </div>
