@@ -5,6 +5,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
+import logo from "../../../assets/logo.svg"
 
 
 export default function Navbar() {
@@ -16,7 +17,7 @@ export default function Navbar() {
         <div className="flex sm:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">EmpreART</span>
-            <img className="h-8 w-auto" src="../../../assets/logo.svg" alt="Logo EmpreART" />
+            <img className="h-8 w-auto" src={logo} alt="Logo EmpreART" />
           </a>
         </div>
         <div className="flex sm:hidden">
