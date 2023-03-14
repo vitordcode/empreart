@@ -9,8 +9,8 @@ export default function Header() {
       <div className="max-w-xl">
         <h1 className="text-white lg:inline md:text-center uppercase font-black text-3xl md:text-4xl lg:text-5xl lg:leading-[4rem] my-12">Você tem a <span>ideia</span> <br />Nós temos a <span>solução</span></h1>
         <div className="md:flex md:items-center md:justify-center lg:inline-block lg:mt-10">
-          <a className="text-white bg-gradient-to-tr from-orange to-yellow px-10 py-4 lg:px-12 lg:py-5 lg:text-lg rounded-md" href="#">Serviços</a>
-          <a className="text-white bg-transparent border-2 px-10 py-[14px] lg:px-12 lg:py-[18px] ml-6 lg:text-lg rounded-md" href="#">Quem somos</a>
+          <a className="text-white bg-gradient-to-tr from-orange to-yellow px-8 py-3 lg:px-12 lg:py-5 lg:text-lg rounded-md" href="#">Serviços</a>
+          <a className="text-white bg-transparent border-2 px-8 py-[12px] lg:px-12 lg:py-[18px] ml-6 lg:text-lg rounded-md" href="#">Quem somos</a>
         </div>
       </div>
     </section>
