@@ -47,7 +47,7 @@ export const slideServices = [
     id: 5,
     image: pingodegente,
     title: "Escola Infantil Pingo de Gente",
-    local: "Bady Bassitt- SP",
+    local: "Bady Bassitt - SP",
     content: "Montagem de arte, impressão e instalação de adesivos."
   },
   {
@@ -81,15 +81,15 @@ export const slideServices = [
   {
     id: 10,
     image: insenf,
-    title: "Clínica Vets e Pets",
-    local: "Bady Bassitt - SP",
+    title: "Insenf",
+    local: "São José do Rio Preto - SP",
     content: "Montagem de arte, impressão e instalação de lona em outdoor."
   },
   {
     id: 11,
     image: kadock,
     title: "Kadock",
-    local: "São José do Rio Preto-SP",
+    local: "São José do Rio Preto - SP",
     content: "Montagem de arte, impressão e instalação de fachada."
   },
   {
