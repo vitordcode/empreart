@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import ReactModal from 'react-modal';
 
 import { impressos } from '../../utils/services'
@@ -115,28 +116,6 @@ export default function Services() {
               </p>
             </div>
           ))}
-          
-      {/* <div className="container">
-      {somedata.map(data => (
-            <div className='item' key={data.id} >
-                  <img 
-                      src={data.img} 
-                      alt='' 
-                      onClick={()=> {
-                          setModalData(data);
-                          setModalIsOpen(true);
-                      }
-                  />
-                </div>
-          ))}
-    </div>
-    <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} style={customStyles}>
-          <h1>{modalData.title}</h1>
-          <p>{modalData.content}</p> 
-          <div>
-            <button onClick={() => setModalIsOpen(false)}>X</button>
-      </div>
-    </Modal> */}
         </div>
       </div>
 

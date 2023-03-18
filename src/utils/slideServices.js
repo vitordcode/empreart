@@ -83,7 +83,7 @@ export const slideServices = [
     image: insenf,
     title: "Insenf",
     local: "São José do Rio Preto - SP",
-    content: "Montagem de arte, impressão e instalação de lona em outdoor."
+    content: "Impressão e instalação de adesivos."
   },
   {
     id: 11,
