@@ -14,7 +14,7 @@ export default function Header() {
             to="servicos"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-150}
             duration={500} 
             className="text-white cursor-pointer bg-gradient-to-tr from-orange to-yellow px-8 py-3 lg:px-12 lg:py-5 lg:text-lg rounded-md" 
             >Serviços</Link>
@@ -23,7 +23,7 @@ export default function Header() {
             to="quemSomos"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-200}
             duration={500}
             className="text-white cursor-pointer bg-transparent border-2 px-8 py-[12px] lg:px-12 lg:py-[18px] ml-6 lg:text-lg rounded-md"
             >Quem somos</Link>
