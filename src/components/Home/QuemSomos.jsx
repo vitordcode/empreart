@@ -2,7 +2,7 @@ import quemSomos from "../../../assets/quemSomos.png";
 
 export default function QuemSomos() {
   return (
-    <section className="mt-20">
+    <section className="mt-20" id="quemSomos">
       <div className="max-w-6xl mx-auto grid grid-cols-1 px-10 md:grid-cols-2 items-center">
         <div>
           <img className="w-[80%] lg:w-[60%] mx-auto" src={quemSomos} alt="Imaguem quem somos" />

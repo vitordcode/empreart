@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+import { Link } from 'react-scroll'
+import { Dialog, Popover } from '@headlessui/react'
 import {
   Bars3Icon,
   XMarkIcon,
@@ -15,10 +16,18 @@ export default function Navbar() {
     <header className="bg-background shadow-md fixed w-full z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex sm:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link 
+            activeClass="active"
+            to="header"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            duration={500}
+            id="logo"
+            className="-m-1.5 p-1.5">
             <span className="sr-only">EmpreART</span>
             <img className="h-8 w-auto" src={logo} alt="Logo EmpreART" />
-          </a>
+          </Link>
         </div>
         <div className="flex sm:hidden">
           <button
@@ -31,16 +40,29 @@ export default function Navbar() {
           </button>
         </div>
         <Popover.Group className="hidden sm:flex sm:gap-x-12">
-        <a href="#" className="text-sm font-medium leading-6 text-gray-900 sm:text-white">
+          <Link 
+          activeClass="active"
+          to="servicos"
+          spy={true}
+          smooth={true}
+          offset={-150}
+          duration={500}
+          onClick={() => setMobileMenuOpen(false)}
+          className="text-sm cursor-pointer font-medium leading-6 text-gray-900 sm:text-white">
             Serviços
-          </a>
+          </Link>
 
-          <a href="#" className="text-sm font-medium leading-6 text-gray-900  sm:text-white">
+          <Link  
+            activeClass="active"
+            to="quemSomos"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={500}
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-sm cursor-pointer font-medium leading-6 text-gray-900  sm:text-white">
             Quem Somos
-          </a>
-          <a href="#" className="text-sm font-medium leading-6 text-gray-900  sm:text-white">
-            Contato
-          </a>
+          </Link>
         </Popover.Group>
       </nav>
       <Dialog as="div" className="sm:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -67,24 +89,28 @@ export default function Navbar() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6 ">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-white hover:bg-gray-900"
+                <Link
+                  activeClass="active"
+                  to="servicos"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="-mx-3 block cursor-pointer rounded-lg py-2 px-3 text-base font-medium leading-7 text-white hover:bg-gray-900"
                 >
                   Serviços
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-white hover:bg-gray-900"
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="quemSomos"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="-mx-3 block cursor-pointer rounded-lg py-2 px-3 text-base font-medium leading-7 text-white hover:bg-gray-900"
                 >
                   Quem somos
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-medium leading-7 text-white hover:bg-gray-900"
-                >
-                  Contato
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -22,3 +22,15 @@ body {
   right: 0 !important;
   z-index: 1000;
 }
+
+.active {
+  text-align:center;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, #FF7C1F, #F6C90E);
+    border-image-slice: 1;
+}
+
+#logo {
+  border-bottom: none!important;
+  cursor: pointer;
+}

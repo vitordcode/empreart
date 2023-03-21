@@ -9,7 +9,7 @@ import Carousel  from "./Carousel"
 
 export default function Services() {
   return (
-    <section className="max-w-7xl mx-auto mt-40 mb-52">
+    <section className="max-w-7xl mx-auto mt-40 mb-52" id='servicos'>
       <h2 className="text-white text-center uppercase text-2xl font-black">
         Divulgue para seu <br />
         negócio ter sucesso
