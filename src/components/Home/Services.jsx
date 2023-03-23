@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import ReactModal from 'react-modal';
-
 import { impressos } from '../../utils/services'
 import { digitais } from '../../utils/digitais'
 import { brindes } from '../../utils/brindes'
@@ -9,20 +6,19 @@ import Carousel  from "./Carousel"
 
 export default function Services() {
   return (
-    <section className="max-w-7xl mx-auto mt-40 mb-52" id='servicos'>
-      <h2 className="text-white text-center uppercase text-2xl font-black">
-        Divulgue para seu <br />
-        negócio ter sucesso
+    <section className="max-w-7xl mx-auto mt-20" id='servicos'>
+      <h2 className="text-white text-center uppercase text-2xl md:text-3xl w-[60%] mx-auto font-black h2-image relative">
+        Divulgue para seu negócio ter sucesso
       </h2>
 
       {/* Impressos */}
       <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
         <div className="mb-10 lg:col-span-1 justify-center flex items-center">
-          <h3 className="text-white text-center uppercase text-xl font-black">
+          <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black">
             Impressos
           </h3>
         </div>
-        <div className="grid grid-cols-2 w-full px-10 lg:col-span-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 w-full px-10 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {impressos.map(item => (
             <div
               className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
@@ -44,11 +40,11 @@ export default function Services() {
       {/* Digitais */}
       <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
         <div className="mb-10 lg:mb-0 lg:col-span-1 lg:col-start-3 lg:row-start-1 justify-center flex items-center">
-          <h3 className="text-white text-center uppercase text-xl font-black">
+          <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black">
             Digitais
           </h3>
         </div>
-        <div className="grid grid-cols-2 px-10 w-full lg:col-start-1 lg:col-span-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 px-10 w-full lg:col-start-1 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {digitais.map(item => (
             <div
               className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
@@ -70,11 +66,11 @@ export default function Services() {
       {/* Brindes */}
       <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
         <div className="mb-10 lg:col-span-1 justify-center flex items-center">
-          <h3 className="text-white text-center uppercase text-xl font-black">
+          <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black">
             Brindes
           </h3>
         </div>
-        <div className="grid grid-cols-2 w-full px-10 lg:col-span-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 w-full px-10 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {brindes.map(item => (
             <div
               className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
@@ -96,11 +92,11 @@ export default function Services() {
       {/* Instalacoes */}
       <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
         <div className="mb-10 lg:mb-0 lg:col-span-1 lg:col-start-3 lg:row-start-1 justify-center flex items-center">
-          <h3 className="text-white text-center uppercase text-xl font-black">
+          <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black">
             Instalações
           </h3>
         </div>
-        <div className="grid grid-cols-2 px-10 w-full lg:col-start-1 lg:col-span-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 px-10 w-full lg:col-start-1 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {instalacoes.map(item => (
             <div
               className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
@@ -121,8 +117,8 @@ export default function Services() {
 
 
 
-      <div className="mt-64">
-        <h2 className="text-white text-center uppercase text-2xl font-black">
+      <div className="mt-40">
+        <h2 className="text-white text-center uppercase text-2xl md:text-3xl w-[60%] mx-auto font-black h2-image relative">
           Alguns serviços realizados
         </h2>
         <div className='mt-20 max-w-full'>

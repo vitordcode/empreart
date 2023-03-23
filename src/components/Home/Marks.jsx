@@ -43,8 +43,8 @@ export default function Marks() {
   }
 
   return (
-    <section className="max-w-7xl mx-auto mt-40 mb-52">
-      <h2 className="text-white text-center uppercase text-2xl font-black mb-20">
+    <section className="max-w-7xl mx-auto my-40">
+      <h2 className="text-white text-center uppercase text-2xl md:text-3xl w-[60%] mx-auto font-black h2-image relative mb-20">
         Marcas que confiam em nosso trabalho
       </h2>
       <div>
