@@ -5,9 +5,10 @@ import 'slick-carousel/slick/slick-theme.css'
 
 import { marks } from '../../utils/marks'
 
-export default function Marks() {
+import bgText from "../../../assets/bg-text.png"
 
-  const  settings = {
+export default function Marks() {
+  const settings = {
     dots: true,
     infinite: false,
     speed: 500,
@@ -44,13 +45,25 @@ export default function Marks() {
 
   return (
     <section className="max-w-7xl mx-auto my-40">
-      <h2 className="text-white text-center uppercase text-2xl md:text-3xl w-[60%] mx-auto font-black h2-image relative mb-20">
-        Marcas que confiam em nosso trabalho
-      </h2>
+      <div className="relative">
+        <img
+          className="absolute left-0 right-0 mx-auto top-0 bottom-0 my-auto w-56 "
+          src={bgText}
+          alt=""
+        />
+        <h2 className="text-white text-center uppercase text-2xl md:text-3xl w-[60%] mx-auto font-black h2-image relative mb-20">
+          Marcas que confiam em nosso trabalho
+        </h2>
+      </div>
       <div>
-        <Slider { ...settings }>
+        <Slider {...settings}>
           {marks.map(item => (
-            <img className='mx-10 lg:px-2 image' src={item} key={item} alt={item} />
+            <img
+              className="mx-10 lg:px-2 image"
+              src={item}
+              key={item}
+              alt={item}
+            />
           ))}
         </Slider>
       </div>

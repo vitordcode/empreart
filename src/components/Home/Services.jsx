@@ -2,21 +2,44 @@ import { impressos } from '../../utils/services'
 import { digitais } from '../../utils/digitais'
 import { brindes } from '../../utils/brindes'
 import { instalacoes } from '../../utils/instalacoes'
-import Carousel  from "./Carousel"
+import Carousel from './Carousel'
+
+import bgText from '../../../assets/bg-text.png'
+import circleYellow from '../../../assets/circles-yellow.svg'
+import circle from '../../../assets/circle.svg'
 
 export default function Services() {
   return (
-    <section className="max-w-7xl mx-auto mt-20" id='servicos'>
-      <h2 className="text-white text-center uppercase text-2xl md:text-3xl w-[60%] mx-auto font-black h2-image relative">
-        Divulgue para seu negócio ter sucesso
-      </h2>
+    <section className="max-w-7xl mx-auto mt-20" id="servicos">
+      <div className="relative">
+        <img
+          className="absolute left-0 right-0 mx-auto top-0 bottom-0 my-auto w-56 "
+          src={bgText}
+          alt=""
+        />
+        <h2 className="text-white text-center uppercase text-2xl md:text-3xl w-[60%] mx-auto font-black h2-image relative">
+          Divulgue para seu negócio ter sucesso
+        </h2>
+      </div>
 
       {/* Impressos */}
       <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
         <div className="mb-10 lg:col-span-1 justify-center flex items-center">
-          <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black">
-            Impressos
-          </h3>
+          <div className="relative">
+            <img
+              className="absolute w-14 left-[-26px] top-[-1rem] bot z-0"
+              src={circle}
+              alt=""
+            />
+            <img
+              className="absolute right-[-12px] z-0 bottom-3 w-6"
+              src={circleYellow}
+              alt=""
+            />
+            <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black z-10">
+              Impressos
+            </h3>
+          </div>
         </div>
         <div className="grid grid-cols-2 w-full px-10 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {impressos.map(item => (
@@ -40,9 +63,21 @@ export default function Services() {
       {/* Digitais */}
       <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
         <div className="mb-10 lg:mb-0 lg:col-span-1 lg:col-start-3 lg:row-start-1 justify-center flex items-center">
-          <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black">
-            Digitais
-          </h3>
+          <div className="relative">
+            <img
+              className="absolute left-[-12px] z-0 bottom-3 w-6"
+              src={circleYellow}
+              alt=""
+            />
+            <img
+              className="absolute w-14 right-[-26px] top-[-1rem] bot z-0"
+              src={circle}
+              alt=""
+            />
+            <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black z-10">
+              Digitais
+            </h3>
+          </div>
         </div>
         <div className="grid grid-cols-2 px-10 w-full lg:col-start-1 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {digitais.map(item => (
@@ -66,9 +101,21 @@ export default function Services() {
       {/* Brindes */}
       <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
         <div className="mb-10 lg:col-span-1 justify-center flex items-center">
-          <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black">
-            Brindes
-          </h3>
+          <div className="relative">
+            <img
+              className="absolute w-14 left-[-26px] top-[-1rem] bot z-0"
+              src={circle}
+              alt=""
+            />
+            <img
+              className="absolute right-[-12px] z-0 bottom-3 w-6"
+              src={circleYellow}
+              alt=""
+            />
+            <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black z-10">
+              Brindes
+            </h3>
+          </div>
         </div>
         <div className="grid grid-cols-2 w-full px-10 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {brindes.map(item => (
@@ -92,9 +139,21 @@ export default function Services() {
       {/* Instalacoes */}
       <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
         <div className="mb-10 lg:mb-0 lg:col-span-1 lg:col-start-3 lg:row-start-1 justify-center flex items-center">
-          <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black">
-            Instalações
-          </h3>
+          <div className="relative">
+            <img
+              className="absolute left-[-12px] z-0 bottom-3 w-6"
+              src={circleYellow}
+              alt=""
+            />
+            <img
+              className="absolute w-14 right-[-26px] top-[-1rem] bot z-0"
+              src={circle}
+              alt=""
+            />
+            <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black z-10">
+              Instalações
+            </h3>
+          </div>
         </div>
         <div className="grid grid-cols-2 px-10 w-full lg:col-start-1 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {instalacoes.map(item => (
@@ -115,13 +174,18 @@ export default function Services() {
         </div>
       </div>
 
-
-
       <div className="mt-40">
-        <h2 className="text-white text-center uppercase text-2xl md:text-3xl w-[60%] mx-auto font-black h2-image relative">
-          Alguns serviços realizados
-        </h2>
-        <div className='mt-20 max-w-full'>
+        <div className='relative'>
+          <img
+            className="absolute left-0 right-0 mx-auto top-0 bottom-0 my-auto w-56 "
+            src={bgText}
+            alt=""
+          />
+          <h2 className="text-white text-center uppercase text-2xl md:text-3xl w-[60%] mx-auto font-black h2-image relative">
+            Alguns serviços realizados
+          </h2>
+        </div>
+        <div className="mt-20 max-w-full">
           <Carousel />
         </div>
       </div>

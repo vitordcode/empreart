@@ -39,13 +39,6 @@ body {
   border-bottom: none!important;
 }
 
-.h2-image::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background: url("../../assets/bg-text.png"); 
-}
-
 .main {
   position: relative;
 }
