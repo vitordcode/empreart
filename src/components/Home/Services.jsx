@@ -1,3 +1,6 @@
+import { useState, useRef } from "react"
+import Modal from "react-modal"
+
 import { impressos } from '../../utils/services'
 import { digitais } from '../../utils/digitais'
 import { brindes } from '../../utils/brindes'
@@ -8,7 +11,20 @@ import bgText from '../../../assets/bg-text.png'
 import circleYellow from '../../../assets/circles-yellow.svg'
 import circle from '../../../assets/circle.svg'
 
+Modal.setAppElement("#root")
+
 export default function Services() {
+
+  const [ modalIsOpen, setModalIsOpen ] = useState(false)
+
+  function openModal() {
+    setModalIsOpen(true)
+  }
+
+  function closeModal() {
+    setModalIsOpen(false)
+  }
+
   return (
     <section className="max-w-7xl mx-auto mt-20" id="servicos">
       <div className="relative">
@@ -21,6 +37,18 @@ export default function Services() {
           Divulgue para seu negócio ter sucesso
         </h2>
       </div>
+
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Modal Serviços"
+        overlayClassName="modal-overlay"
+        className="w-72 bg-grayCard p-4 rounded-md text-white"
+      >
+        <h2>sadsa </h2>
+        <p>dfsdfsdf</p>
+        <button onClick={closeModal}>Fechar</button>
+      </Modal>
 
       {/* Impressos */}
       <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
@@ -44,7 +72,8 @@ export default function Services() {
         <div className="grid grid-cols-2 w-full px-10 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {impressos.map(item => (
             <div
-              className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
+              onClick={openModal}
+              className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col cursor-pointer justify-center items-center rounded-md"
               key={item.nome}
             >
               <img

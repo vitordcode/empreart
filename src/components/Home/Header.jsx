@@ -27,7 +27,7 @@ export default function Header() {
             smooth={true}
             offset={-150}
             duration={500} 
-            className="text-white cursor-pointer hover:bg-gradient-to-bl transition-all bg-gradient-to-tr from-orange to-yellow px-8 py-3 lg:px-12 lg:py-5 lg:text-lg rounded-md" 
+            className="text-white cursor-pointer hover:bg-gradient-to-bl transition-all bg-gradient-to-tr from-orange to-yellow px-6 py-3 lg:px-12 lg:py-5 lg:text-lg rounded-md" 
             >Serviços</Link>
           <Link 
             activeClass="active"
@@ -36,7 +36,7 @@ export default function Header() {
             smooth={true}
             offset={-200}
             duration={500}
-            className="text-white hover:bg-white hover:text-gray-900 transition-all cursor-pointer bg-transparent border-2 px-8 py-[12px] lg:px-12 lg:py-[18px] ml-6 lg:text-lg rounded-md"
+            className="text-white hover:bg-white hover:text-gray-900 transition-all cursor-pointer bg-transparent border-2 px-6 py-[12px] lg:px-12 lg:py-[18px] ml-2 md:ml-6 lg:text-lg rounded-md"
             >Quem somos</Link>
         </div>
         <img src={lines} className="absolute right-28 lg:left-48 lg:bottom-[-10rem] w-32 lg:w-48" alt="" />
