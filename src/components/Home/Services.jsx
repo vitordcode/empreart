@@ -1,7 +1,7 @@
 import { useState, useRef } from "react"
 import Modal from "react-modal"
 
-import { impressos } from '../../utils/services'
+import { impressos } from '../../utils/impressos'
 import { digitais } from '../../utils/digitais'
 import { brindes } from '../../utils/brindes'
 import { instalacoes } from '../../utils/instalacoes'
