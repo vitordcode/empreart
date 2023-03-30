@@ -5,6 +5,7 @@ import { impressos } from '../../utils/impressos'
 import { digitais } from '../../utils/digitais'
 import { brindes } from '../../utils/brindes'
 import { instalacoes } from '../../utils/instalacoes'
+
 import Carousel from './Carousel'
 
 import bgText from '../../../assets/bg-text.png'
@@ -16,9 +17,12 @@ Modal.setAppElement("#root")
 export default function Services() {
 
   const [ modalIsOpen, setModalIsOpen ] = useState(false)
+  const [ selectedItem, setSelectedItem ] = useState({})
 
-  function openModal() {
+  function openModal(item) {
     setModalIsOpen(true)
+    setSelectedItem(item)
+    console.log(selectedItem, item)
   }
 
   function closeModal() {
@@ -43,11 +47,13 @@ export default function Services() {
         onRequestClose={closeModal}
         contentLabel="Modal Serviços"
         overlayClassName="modal-overlay"
-        className="w-72 bg-grayCard p-4 rounded-md text-white"
+        className="text-center bg-grayCard px-8 py-12 flex flex-col items-center m-12 rounded-md text-white"
       >
-        <h2>sadsa </h2>
-        <p>dfsdfsdf</p>
-        <button onClick={closeModal}>Fechar</button>
+        <img src={selectedItem.src} alt="" />
+
+        <h2 className=" font-medium text-lg pt-6 pb-2">{selectedItem.nome}</h2>
+        <p className="font-light text-sm mb-6">{selectedItem.description}</p>
+        <button className="bg-gradient-to-tr from-orange to-yellow px-6 py-2" onClick={closeModal}>Fechar</button>
       </Modal>
 
       {/* Impressos */}
@@ -72,7 +78,7 @@ export default function Services() {
         <div className="grid grid-cols-2 w-full px-10 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {impressos.map(item => (
             <div
-              onClick={openModal}
+              onClick={() => openModal(item)}
               className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col cursor-pointer justify-center items-center rounded-md"
               key={item.nome}
             >
