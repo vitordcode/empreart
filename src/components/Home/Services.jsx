@@ -47,7 +47,7 @@ export default function Services() {
         onRequestClose={closeModal}
         contentLabel="Modal Serviços"
         overlayClassName="modal-overlay"
-        className="text-center bg-grayCard px-8 py-12 flex flex-col items-center m-12 rounded-md text-white"
+        className="text-center bg-grayCard outline-none px-8 py-12 flex flex-col items-center m-12 rounded-md text-white"
       >
         <img src={selectedItem.src} alt="" />
 
