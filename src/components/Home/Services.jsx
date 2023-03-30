@@ -1,5 +1,5 @@
-import { useState, useRef } from "react"
-import Modal from "react-modal"
+import { useState, useRef } from 'react'
+import Modal from 'react-modal'
 
 import { impressos } from '../../utils/impressos'
 import { digitais } from '../../utils/digitais'
@@ -12,12 +12,11 @@ import bgText from '../../../assets/bg-text.png'
 import circleYellow from '../../../assets/circles-yellow.svg'
 import circle from '../../../assets/circle.svg'
 
-Modal.setAppElement("#root")
+Modal.setAppElement('#root')
 
 export default function Services() {
-
-  const [ modalIsOpen, setModalIsOpen ] = useState(false)
-  const [ selectedItem, setSelectedItem ] = useState({})
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+  const [selectedItem, setSelectedItem] = useState({})
 
   function openModal(item) {
     setModalIsOpen(true)
@@ -53,7 +52,12 @@ export default function Services() {
 
         <h2 className=" font-medium text-lg pt-6 pb-2">{selectedItem.nome}</h2>
         <p className="font-light text-sm mb-6">{selectedItem.description}</p>
-        <button className="bg-gradient-to-tr from-orange to-yellow px-6 py-2" onClick={closeModal}>Fechar</button>
+        <button
+          className="bg-gradient-to-tr from-orange to-yellow px-6 py-2"
+          onClick={closeModal}
+        >
+          Fechar
+        </button>
       </Modal>
 
       {/* Impressos */}
@@ -117,6 +121,7 @@ export default function Services() {
         <div className="grid grid-cols-2 px-10 w-full lg:col-start-1 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {digitais.map(item => (
             <div
+              onClick={() => openModal(item)}
               className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
               key={item.nome}
             >
@@ -155,6 +160,7 @@ export default function Services() {
         <div className="grid grid-cols-2 w-full px-10 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {brindes.map(item => (
             <div
+              onClick={() => openModal(item)}
               className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
               key={item.nome}
             >
@@ -193,6 +199,7 @@ export default function Services() {
         <div className="grid grid-cols-2 px-10 w-full lg:col-start-1 lg:col-span-2 md:grid-cols-3 lg:grid-cols-4">
           {instalacoes.map(item => (
             <div
+              onClick={() => openModal(item)}
               className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
               key={item.nome}
             >
@@ -210,7 +217,7 @@ export default function Services() {
       </div>
 
       <div className="mt-40">
-        <div className='relative'>
+        <div className="relative">
           <img
             className="absolute left-0 right-0 mx-auto top-0 bottom-0 my-auto w-56 "
             src={bgText}
