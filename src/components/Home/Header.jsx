@@ -11,7 +11,7 @@ import whatsapp from "../../../assets/whatsapp.png"
 export default function Header() {
   return (
     <>
-      <a className="fixed bottom-4 right-4 w-10" href="https://api.whatsapp.com/send?phone=5517996820989&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site!!" >
+      <a target="_blank" className="fixed bottom-4 right-4 w-10" href="https://api.whatsapp.com/send?phone=5517996820989&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site!!" >
         <img src={whatsapp} alt="" />
       </a>
       <img src={iconRight} className="absolute right-0 top-[60vh] lg:top-[40vh] lg:w-56" alt="" />

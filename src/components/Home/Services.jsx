@@ -53,7 +53,7 @@ export default function Services() {
         <h2 className="md:col-start-2 font-medium text-lg pt-6 md:pt-2 pb-2 md:mr-auto">{selectedItem.nome}</h2>
         <p className="md:col-start-2 font-light text-sm mb-6 md:mb-2 mr-auto md:max-w-[90%] md:text-left">{selectedItem.description}</p>
         <button
-          className="md:col-start-2 bg-gradient-to-tr from-orange to-yellow px-6 py-2 md:w-32"
+          className="md:col-start-2 bg-gradient-to-tr rounded-md from-orange to-yellow px-6 py-2 md:w-32"
           onClick={closeModal}
         >
           Fechar
