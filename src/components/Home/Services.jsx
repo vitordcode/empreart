@@ -34,7 +34,7 @@ export default function Services() {
         <img
           className="absolute left-0 right-0 mx-auto top-0 bottom-0 my-auto w-56 "
           src={bgText}
-          alt=""
+          alt="Imagem de fundo do texto"
         />
         <h2 className="text-white text-center uppercase text-2xl md:text-3xl w-[60%] mx-auto font-black h2-image relative">
           Divulgue para seu negócio ter sucesso
@@ -46,14 +46,14 @@ export default function Services() {
         onRequestClose={closeModal}
         contentLabel="Modal Serviços"
         overlayClassName="modal-overlay"
-        className="text-center bg-grayCard outline-none px-8 py-12 flex flex-col items-center m-12 rounded-md text-white"
+        className="text-center md:max-w-4xl bg-grayCard outline-none px-8 py-12 flex flex-col md:grid md:grid-cols-2 md:grid-rows-3 items-center m-12 rounded-md text-white"
       >
-        <img src={selectedItem.src} alt="" />
+        <img className="md:col-start-1 md:row-start-1 md:row-end-3 md:h-full mx-auto " src={selectedItem.src} alt="" />
 
-        <h2 className=" font-medium text-lg pt-6 pb-2">{selectedItem.nome}</h2>
-        <p className="font-light text-sm mb-6">{selectedItem.description}</p>
+        <h2 className="md:col-start-2 font-medium text-lg pt-6 md:pt-2 pb-2 md:mr-auto">{selectedItem.nome}</h2>
+        <p className="md:col-start-2 font-light text-sm mb-6 md:mb-2 mr-auto md:max-w-[90%] md:text-left">{selectedItem.description}</p>
         <button
-          className="bg-gradient-to-tr from-orange to-yellow px-6 py-2"
+          className="md:col-start-2 bg-gradient-to-tr from-orange to-yellow px-6 py-2 md:w-32"
           onClick={closeModal}
         >
           Fechar

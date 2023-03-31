@@ -6,9 +6,14 @@ import iconTop from "../../../assets/elements/iconTop.svg"
 import bolinhasLeft from "../../../assets/elements/bolinhasLeft.svg"
 import lines from "../../../assets/elements/lines.svg"
 
+import whatsapp from "../../../assets/whatsapp.png"
+
 export default function Header() {
   return (
     <>
+      <a className="fixed bottom-4 right-4 w-10" href="https://api.whatsapp.com/send?phone=5517996820989&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site!!" >
+        <img src={whatsapp} alt="" />
+      </a>
       <img src={iconRight} className="absolute right-0 top-[60vh] lg:top-[40vh] lg:w-56" alt="" />
       <img src={iconTop} className="absolute left-0 top-[10vh] lg:top-[5vh] lg:w-48" alt="" />
       <img src={bolinhasLeft} className="absolute left-0 top-[40vh] lg:top-[50vh] lg:w-48" alt="" />
