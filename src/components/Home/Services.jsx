@@ -122,7 +122,7 @@ export default function Services() {
           {digitais.map(item => (
             <div
               onClick={() => openModal(item)}
-              className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
+              className="py-4 cursor-pointer bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
               key={item.nome}
             >
               <img
@@ -161,7 +161,7 @@ export default function Services() {
           {brindes.map(item => (
             <div
               onClick={() => openModal(item)}
-              className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
+              className="py-4 cursor-pointer bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
               key={item.nome}
             >
               <img
@@ -200,7 +200,7 @@ export default function Services() {
           {instalacoes.map(item => (
             <div
               onClick={() => openModal(item)}
-              className="py-4 bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
+              className="py-4 cursor-pointer bg-gradient-to-tl from-grayCard to-blueCard m-3 flex flex-col justify-center items-center rounded-md"
               key={item.nome}
             >
               <img
