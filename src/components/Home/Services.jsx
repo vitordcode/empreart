@@ -61,7 +61,7 @@ export default function Services() {
       </Modal>
 
       {/* Impressos */}
-      <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
+      <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28" id="impressos">
         <div className="mb-10 lg:col-span-1 justify-center flex items-center">
           <div className="relative">
             <img
@@ -100,7 +100,7 @@ export default function Services() {
       </div>
 
       {/* Digitais */}
-      <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
+      <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28" id="digitais">
         <div className="mb-10 lg:mb-0 lg:col-span-1 lg:col-start-3 lg:row-start-1 justify-center flex items-center">
           <div className="relative">
             <img
@@ -139,7 +139,7 @@ export default function Services() {
       </div>
 
       {/* Brindes */}
-      <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
+      <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28" id="brindes">
         <div className="mb-10 lg:col-span-1 justify-center flex items-center">
           <div className="relative">
             <img
@@ -178,7 +178,7 @@ export default function Services() {
       </div>
 
       {/* Instalacoes */}
-      <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28">
+      <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 text-center mt-28" id="instalacoes">
         <div className="mb-10 lg:mb-0 lg:col-span-1 lg:col-start-3 lg:row-start-1 justify-center flex items-center">
           <div className="relative">
             <img

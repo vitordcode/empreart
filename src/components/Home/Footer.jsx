@@ -32,7 +32,7 @@ export function Footer() {
                 smooth={true}
                 offset={-150}
                 duration={500}
-                className="opacity-60 font-light text-sm" href="">
+                className="opacity-60 font-light text-sm">
                   Inicio
                 </Link>
               </Link>
@@ -44,7 +44,7 @@ export function Footer() {
                 smooth={true}
                 offset={-150}
                 duration={500}
-                className="opacity-60 font-light text-sm" href="">
+                className="opacity-60 font-light text-sm">
                   Serviços
                 </Link>
               </li>
@@ -56,7 +56,7 @@ export function Footer() {
                 smooth={true}
                 offset={-150}
                 duration={500}
-                className="opacity-60 font-light text-sm" href="">
+                className="opacity-60 font-light text-sm">
                   Quem somos
                 </Link>
               </li>
@@ -67,24 +67,52 @@ export function Footer() {
             <h5 className="font-medium md:pt-0 pt-4">Serviços</h5>
             <ul>
               <li>
-                <span className="opacity-60 font-light text-sm" href="">
+                <Link 
+                activeClass="active"
+                to="impressos"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={500}
+                className="opacity-60 font-light text-sm cursor-pointer">
                   Impressos
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="opacity-60 font-light text-sm" href="">
+                <Link 
+                activeClass="active"
+                to="digitais"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={500}
+                className="opacity-60 font-light text-sm cursor-pointer">
                   Digitais
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="opacity-60 font-light text-sm" href="">
+                <Link 
+                activeClass="active"
+                to="brindes"
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={500}
+                className="opacity-60 font-light text-sm cursor-pointer">
                   Brindes
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="opacity-60 font-light text-sm" href="">
+                <Link 
+                activeClass="active"
+                to="instalacoes"
+                spy={true}
+                smooth={true}
+                offset={-300}
+                duration={500}
+                className="opacity-60 font-light text-sm cursor-pointer">
                   Instalações
-                </span>
+                </Link>
               </li>
             </ul>
           </div>
