@@ -133,7 +133,7 @@ export function Footer() {
         <div className="w-full text-center">
           <span className="text-white text-center pb-4 text-sm opacity-60 font-light">
             EMPREART 2023. Desenvolvido por{' '}
-            <a href="" className="font-medium">
+            <a href="https://www.linkedin.com/in/vitordcode/" target="_blank" className="font-medium">
               Vitor de Paula.
             </a>
           </span>
