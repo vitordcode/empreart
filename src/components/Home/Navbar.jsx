@@ -1,13 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-scroll'
-import { Dialog, Popover } from '@headlessui/react'
-import {
-  Bars3Icon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
+import {  Popover } from '@headlessui/react'
 
 import logo from "../../../assets/logo.svg"
-
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
