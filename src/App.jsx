@@ -5,6 +5,7 @@ import Marks from "./components/Home/Marks"
 import QuemSomos from "./components/Home/QuemSomos"
 import { Footer } from "./components/Home/Footer"
 import Numbers from "./components/Home/Numbers"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Numbers />
       <Marks />
       <Footer />
+      <Analytics />
     </>
   )
 }
