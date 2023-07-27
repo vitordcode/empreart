@@ -21,7 +21,6 @@ export default function Services() {
   function openModal(item) {
     setModalIsOpen(true)
     setSelectedItem(item)
-    console.log(selectedItem, item)
   }
 
   function closeModal() {
@@ -48,7 +47,7 @@ export default function Services() {
         overlayClassName="modal-overlay"
         className="text-center md:max-w-4xl bg-grayCard outline-none px-8 py-12 flex flex-col md:grid md:grid-cols-2 md:grid-rows-3 items-center m-12 rounded-md text-white"
       >
-        <img className="md:col-start-1 md:row-start-1 md:row-end-3 md:h-full mx-auto " src={selectedItem.src} alt="" />
+        <img className="md:col-start-1 md:row-start-1 md:row-end-3 md:h-full mx-auto " src={selectedItem.src} alt={selectedItem.nome} />
 
         <h2 className="md:col-start-2 font-medium text-lg pt-6 md:pt-2 pb-2 md:mr-auto">{selectedItem.nome}</h2>
         <p className="md:col-start-2 font-light text-sm mb-6 md:mb-2 mr-auto md:max-w-[90%] md:text-left">{selectedItem.description}</p>
@@ -106,12 +105,12 @@ export default function Services() {
             <img
               className="absolute left-[-12px] z-0 bottom-3 w-6"
               src={circleYellow}
-              alt=""
+              alt="Elemento de fundo"
             />
             <img
               className="absolute w-14 right-[-26px] top-[-1rem] bot z-0"
               src={circle}
-              alt=""
+              alt="Elemento de fundo"
             />
             <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black z-10">
               Digitais
@@ -145,12 +144,12 @@ export default function Services() {
             <img
               className="absolute w-14 left-[-26px] top-[-1rem] bot z-0"
               src={circle}
-              alt=""
+              alt="Elemento de fundo"
             />
             <img
               className="absolute right-[-12px] z-0 bottom-3 w-6"
               src={circleYellow}
-              alt=""
+              alt="Elemento de fundo"
             />
             <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black z-10">
               Brindes
@@ -182,14 +181,14 @@ export default function Services() {
         <div className="mb-10 lg:mb-0 lg:col-span-1 lg:col-start-3 lg:row-start-1 justify-center flex items-center">
           <div className="relative">
             <img
-              className="absolute left-[-12px] z-0 bottom-3 w-6"
+              className="absolute left-[-12px] z-10 bottom-3 w-6"
               src={circleYellow}
-              alt=""
+              alt="Elemento de fundo"
             />
             <img
-              className="absolute w-14 right-[-26px] top-[-1rem] bot z-0"
+              className="absolute w-14 right-[-26px] top-[-1rem] bot z-10"
               src={circle}
-              alt=""
+              alt="Elemento de fundo"
             />
             <h3 className="text-white text-center uppercase text-xl md:text-2xl font-black z-10">
               Instalações
@@ -221,7 +220,7 @@ export default function Services() {
           <img
             className="absolute left-0 right-0 mx-auto top-0 bottom-0 my-auto w-56 "
             src={bgText}
-            alt=""
+            alt="Elemento de fundo"
           />
           <h2 className="text-white text-center uppercase text-2xl md:text-3xl w-[60%] mx-auto font-black h2-image relative">
             Alguns serviços realizados
